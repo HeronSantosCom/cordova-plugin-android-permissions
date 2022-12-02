@@ -98,6 +98,7 @@ public class Permissions extends CordovaPlugin {
             try {
                 permission0 = permission.getString(0);
             } catch (JSONException ex) {
+                ex.printStackTrace();
                 JSONObject returnObj = new JSONObject();
                 addProperty(returnObj, KEY_ERROR, ACTION_REQUEST_PERMISSION);
                 addProperty(returnObj, KEY_MESSAGE, "Check permission has been failed." + ex);
@@ -132,6 +133,7 @@ public class Permissions extends CordovaPlugin {
         } else {
             permissionsCallback = callbackContext;
             String[] permissionArray = getPermissions(permissions);
+            Log.i("cordova-permission", "Request permission " + permissionArray[0]);
             if (permissionArray.length == 1 && "android.permission.SYSTEM_ALERT_WINDOW".equals(permissionArray[0])) {
                 Log.i(TAG, "Request permission SYSTEM_ALERT_WINDOW");
 

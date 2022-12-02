@@ -33,10 +33,10 @@ function Permissions() {
     this.BIND_WALLPAPER = 'android.permission.BIND_WALLPAPER';
     this.BLUETOOTH = 'android.permission.BLUETOOTH';
     this.BLUETOOTH_ADMIN = 'android.permission.BLUETOOTH_ADMIN';
-    this.BLUETOOTH_ADVERTISE = 'android.permission.BLUETOOTH_ADVERTISE';
-    this.BLUETOOTH_CONNECT = 'android.permission.BLUETOOTH_CONNECT';
+    this.BLUETOOTH_ADVERTISE = "android.permission.BLUETOOTH_ADVERTISE";
+    this.BLUETOOTH_CONNECT = "android.permission.BLUETOOTH_CONNECT";
     this.BLUETOOTH_PRIVILEGED = 'android.permission.BLUETOOTH_PRIVILEGED';
-    this.BLUETOOTH_SCAN = 'android.permission.BLUETOOTH_SCAN';
+    this.BLUETOOTH_SCAN = "android.permission.BLUETOOTH_SCAN";
     this.BODY_SENSORS = 'android.permission.BODY_SENSORS';
     this.BRICK = 'android.permission.BRICK';
     this.BROADCAST_PACKAGE_REMOVED = 'android.permission.BROADCAST_PACKAGE_REMOVED';
@@ -92,7 +92,6 @@ function Permissions() {
     this.MOUNT_UNMOUNT_FILESYSTEMS = 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS';
     this.NFC = 'android.permission.NFC';
     this.PERSISTENT_ACTIVITY = 'android.permission.PERSISTENT_ACTIVITY';
-    this.POST_NOTIFICATIONS = 'android.permission.POST_NOTIFICATIONS';
     this.PROCESS_OUTGOING_CALLS = 'android.permission.PROCESS_OUTGOING_CALLS';
     this.READ_CALENDAR = 'android.permission.READ_CALENDAR';
     this.READ_CALL_LOG = 'android.permission.READ_CALL_LOG';
@@ -102,9 +101,6 @@ function Permissions() {
     this.READ_HISTORY_BOOKMARKS = 'com.android.browser.permission.READ_HISTORY_BOOKMARKS';
     this.READ_INPUT_STATE = 'android.permission.READ_INPUT_STATE';
     this.READ_LOGS = 'android.permission.READ_LOGS';
-    this.READ_MEDIA_AUDIO = 'android.permission.READ_MEDIA_AUDIO';
-    this.READ_MEDIA_IMAGES = 'android.permission.READ_MEDIA_IMAGES';
-    this.READ_MEDIA_VIDEO = 'android.permission.READ_MEDIA_VIDEO';
     this.READ_PHONE_STATE = 'android.permission.READ_PHONE_STATE';
     this.READ_PROFILE = 'android.permission.READ_PROFILE';
     this.READ_SMS = 'android.permission.READ_SMS';
@@ -163,6 +159,8 @@ function Permissions() {
     this.WRITE_SYNC_SETTINGS = 'android.permission.WRITE_SYNC_SETTINGS';
     this.WRITE_USER_DICTIONARY = 'android.permission.WRITE_USER_DICTIONARY';
     this.WRITE_VOICEMAIL = 'com.android.voicemail.permission.WRITE_VOICEMAIL';
+    this.ANSWER_PHONE_CALLS = 'android.permission.ANSWER_PHONE_CALLS';
+    this.READ_PHONE_NUMBERS = 'android.permission.READ_PHONE_NUMBERS';
 }
 
 function deprecated(name) {
